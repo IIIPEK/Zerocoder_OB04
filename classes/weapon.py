@@ -23,12 +23,12 @@ class MagicAttack(AttackType):
 
 class TeethAttack(AttackType):
     def calculate_attack(self):
-        self.last_attack = randint(1,3)
+        self.last_attack = randint(1,5)
         return self.last_attack
 
 class PawAttack(AttackType):
     def calculate_attack(self):
-        self.last_attack = randint(2,4)
+        self.last_attack = randint(2,6)
         return self.last_attack
 
 
@@ -75,7 +75,7 @@ class MagicStaff(Weapon):
 
 
 class Teeth(Weapon):
-    def __init__(self, min_distance=0, max_distance=1, attack_type=TeethAttack(), weapon_type=""):
+    def __init__(self, min_distance=0, max_distance=1, attack_type=TeethAttack(), weapon_type="Big Sharp Teeth"):
         super().__init__(min_distance, max_distance, attack_type, weapon_type)
 
     def attack(self):
@@ -83,7 +83,7 @@ class Teeth(Weapon):
         return self.last_attack_power
 
 class Paw(Weapon):
-    def __init__(self, min_distance=1, max_distance=2, attack_type=TeethAttack(), weapon_type=""):
+    def __init__(self, min_distance=1, max_distance=2, attack_type=TeethAttack(), weapon_type="Very Heavy Paw"):
         super().__init__(min_distance, max_distance, attack_type, weapon_type)
 
     def attack(self):

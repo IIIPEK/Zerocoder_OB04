@@ -4,7 +4,7 @@ from classes.weapon import Sword, Bow, Teeth, Paw, MagicStaff
 from classes.characters import Fighter, Monster
 
 figter = Fighter("Figter", weapons=[Sword(), Bow(), MagicStaff()],position=10)
-monster = Monster("Monster", weapons=[Teeth(), Paw()],position=30, speed=3)
+monster = Monster("Monster", weapons=[Teeth(), Paw()],position=30, speed=4)
 
 step = 0
 while figter.is_alive() and monster.is_alive():
