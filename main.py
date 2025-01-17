@@ -1,4 +1,5 @@
 from unittest.mock import MagicMixin
+from xml.sax.handler import version
 
 from classes.weapon import Sword, Bow, Teeth, Paw, MagicStaff
 from classes.characters import Fighter, Monster
@@ -17,3 +18,6 @@ if figter.is_alive():
     print(f"{figter.name} wins!")
 else:
     print(f"{monster.name} wins!")
+
+
+
